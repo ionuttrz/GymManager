@@ -19,4 +19,4 @@ GymManager-Avalonia is a cross-platform desktop application developed using Aval
 
   - C# backend logic
 
-This project is ideal for learning CRUD operations, MVVM architecture, and desktop UI development in C#.
+This project is ideal for learning CRUD operations and desktop UI development in C#.

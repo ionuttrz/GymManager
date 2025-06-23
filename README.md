@@ -1,6 +1,6 @@
 GymManager-Avalonia is a cross-platform desktop application developed using Avalonia UI and MySQL. It enables gym staff to manage clients, schedule reservations for sports halls, and organize training sessions with ease.
 
-#✨ Features:
+#Features:
 
   Add, view, edit, and delete gym clients
   
@@ -10,7 +10,7 @@ GymManager-Avalonia is a cross-platform desktop application developed using Aval
   
   Intuitive UI with real-time form validation
 
-#🔧 Technologies:
+#Technologies:
 
   Avalonia UI (.NET cross-platform desktop framework)
 

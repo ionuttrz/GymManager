@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="SalaSportUI.MainWindow"
+        Width="1200" Height="500"
+        Title="Sala Sport - Management">
+
+  <TabControl>
+    <TabItem Header="Clienți">
+      <StackPanel Margin="10" Spacing="5">
+        <TextBox Name="ClientNumeTextBox" Watermark="Nume" Width="200"/>
+        <TextBox Name="ClientPrenumeTextBox" Watermark="Prenume" Width="200"/>
+        <TextBox Name="ClientEmailTextBox" Watermark="Email" Width="200"/>
+        <TextBox Name="ClientTelefonTextBox" Watermark="Telefon" Width="200"/>
+        <Button Content="Adaugă client" Click="OnAddClientClick"/>
+        <Button Content="Afișează Clienți" Click="OnAfiseazaClientiClick" />
+        <Button Content="Modifică Client" Click="OnModificaClientClick" />
+        <Button Content="Șterge Client" Click="OnStergeClientClick" />
+        <ListBox Name="ClientiListBox" Height="200"/>
+      </StackPanel>
+    </TabItem>
+
+    <TabItem Header="Rezervări">
+      <StackPanel Margin="10" Spacing="5">
+        <ComboBox Name="RezervariClientComboBox" Width="300"/>
+        <DatePicker Name="RezervariDataPicker" />
+        <TextBox Name="RezervariOraStartTextBox" Watermark="Ora început (HH:mm)" Width="200"/>
+        <TextBox Name="RezervariOraSfarsitTextBox" Watermark="Ora sfârșit (HH:mm)" Width="200"/>
+        <TextBox Name="RezervariSalaTextBox" Watermark="Sala" Width="200"/>
+        <Button Content="Adaugă rezervare" Click="OnAddRezervareClick"/>
+        <Button Content="Afișează Rezervări" Click="OnAfisareRezervariClick" />
+        <ListBox Name="RezervariListBox" Height="200"/>
+      </StackPanel>
+    </TabItem>
+
+    <TabItem Header="Programări">
+      <StackPanel Margin="10" Spacing="5">
+        <TextBox Name="ProgramareClientIdTextBox" Watermark="ID client" Width="200"/>
+        <TextBox Name="ProgramareDataTextBox" Watermark="Data (YYYY-MM-DD)" Width="200"/>
+        <TextBox Name="ProgramareOraTextBox" Watermark="Ora (HH:mm)" Width="200"/>
+        <TextBox Name="ProgramareAntrenorTextBox" Watermark="Antrenor" Width="200"/>
+        <TextBox Name="ProgramareActivitateTextBox" Watermark="Activitate" Width="200"/>
+        <Button Content="Adaugă programare" Click="OnAddProgramareClick"/>
+        <Button Content="Afișează Programări" Click="OnAfisareProgramariClick" />
+        <ListBox Name="ProgramariListBox" Height="200"/>
+      </StackPanel>
+    </TabItem>
+  </TabControl>
+</Window>
